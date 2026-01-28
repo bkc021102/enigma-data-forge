@@ -1,100 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#0b1020" />
-  <title>Krishna Chaitanya Bhupathi Raju | Data Scientist & AI Engineer</title>
-  <meta name="description" content="Portfolio of Krishna Chaitanya Bhupathi Raju — Data Scientist & AI Engineer. Projects, skills, experience, and contact." />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Krishna Chaitanya Bhupathi Raju | Data Scientist & AI Engineer" />
-  <meta property="og:description" content="Projects, skills, experience, and contact." />
-  <meta property="og:type" content="website" />
-
-  <!-- Icons -->
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <style>
-    :root{
-      --bg0:#070a12;
-      --bg1:#0b1020;
-      --card:rgba(255,255,255,.06);
-      --card2:rgba(255,255,255,.08);
-      --stroke:rgba(255,255,255,.12);
-      --text:rgba(255,255,255,.88);
-      --muted:rgba(255,255,255,.68);
-      --muted2:rgba(255,255,255,.55);
-      --brand1:#7c3aed; /* violet */
-      --brand2:#22c55e; /* green */
-      --brand3:#38bdf8; /* sky */
-      --shadow: 0 18px 60px rgba(0,0,0,.55);
-      --radius: 18px;
-      --radius2: 24px;
-      --max: 1100px;
-    }
-
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      color:var(--text);
-      background:
-        radial-gradient(1200px 800px at 10% -10%, rgba(124,58,237,.35), transparent 60%),
-        radial-gradient(900px 700px at 110% 10%, rgba(56,189,248,.28), transparent 60%),
-        radial-gradient(900px 700px at 30% 120%, rgba(34,197,94,.18), transparent 60%),
-        linear-gradient(180deg, var(--bg0), var(--bg1));
-      min-height:100vh;
-      overflow-x:hidden;
-    }
-
-    a{color:inherit; text-decoration:none}
-    .container{max-width:var(--max); margin:0 auto; padding:28px 18px 70px}
-
-    /* Top nav */
-    .nav{
-      position:sticky; top:0; z-index:50;
-      backdrop-filter: blur(14px);
-      background: rgba(7,10,18,.55);
-      border-bottom: 1px solid rgba(255,255,255,.06);
-    }
-    .nav-inner{
-      max-width:var(--max); margin:0 auto;
-      padding: 14px 18px;
-      display:flex; align-items:center; justify-content:space-between; gap:14px;
-    }
-    .brand{
-      display:flex; align-items:center; gap:10px;
-      font-weight:700; letter-spacing:.2px;
-    }
-    .dot{
-      width:10px; height:10px; border-radius:999px;
-      background: linear-gradient(135deg, var(--brand1), var(--brand3));
-      box-shadow: 0 0 0 4px rgba(124,58,237,.12);
-    }
-    .links{
-      display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end;
-    }
-    .pill{
-      padding:10px 12px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-      border-radius: 999px;
-      color: var(--muted);
-      font-size: 13px;
-      transition: transform .15s ease, background .15s ease, border-color .15s ease;
-    }
-    .pill:hover{
-      transform: translateY(-1px);
-      background: rgba(255,255,255,.07);
-      border-color: rgba(255,255,255,.16);
-      color: var(--text);
-    }
-
-    /* Hero */
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -193,6 +97,7 @@
       gap:10px;
       font-weight:800;
       letter-spacing:.3px;
+      white-space:nowrap;
     }
     .logo{
       width:32px; height:32px;
@@ -387,6 +292,10 @@
       border-color: rgba(255,255,255,.16);
       color: var(--text);
     }
+    button.linkchip{
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+    }
 
     /* Sections */
     section{
@@ -530,6 +439,15 @@
       z-index: 2000;
       box-shadow: var(--shadow);
     }
+
+    /* Small helper: clickable inline link style */
+    .smalllink{
+      color: rgba(103,232,249,.95);
+      text-decoration: none;
+      border-bottom: 1px dashed rgba(103,232,249,.35);
+      padding-bottom:2px;
+    }
+    .smalllink:hover{color: rgba(255,255,255,.92)}
   </style>
 </head>
 
@@ -581,6 +499,7 @@
         <div class="cta">
           <a class="btn primary" href="#contact"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
           <a class="btn ghost" href="#projects"><i class="fa-solid fa-rocket"></i> View Projects</a>
+          <!-- Put your PDF in repo as resume.pdf -->
           <a class="btn" href="resume.pdf" download><i class="fa-solid fa-download"></i> Download Resume</a>
         </div>
       </div>
@@ -748,54 +667,110 @@
               <li>Performed data cleaning, preprocessing, and exploratory analysis using Python (Pandas, NumPy).</li>
               <li>Analyzed user behavior and product metrics to derive actionable business insights.</li>
               <li>Supported A/B testing and marketing analytics to optimize product features and campaigns.</li>
-              <li>Built visual dashboards to present findings to product and marketing teams; collaborated cross-functionally.</li>
+              <li>Built visual dashboards to present findings; collaborated cross-functionally with product/marketing teams.</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- PROJECTS (DETAILED) -->
     <section id="projects" class="reveal">
       <div class="section-title">
         <h2>Projects</h2>
-        <span>Selected work</span>
+        <span>Deep-dive highlights</span>
       </div>
 
       <div class="grid">
+        <!-- Project 1 -->
         <div class="tile col-12">
           <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap">
             <h3 style="margin:0;font-size:15.5px">Flight Delay Prediction & Analytics System</h3>
-            <span class="tag"><i class="fa-solid fa-bolt"></i> Apache Spark • PySpark • ML</span>
+            <div class="tags" style="margin-top:0">
+              <span class="tag"><i class="fa-solid fa-bolt"></i> Apache Spark</span>
+              <span class="tag">PySpark</span>
+              <span class="tag">ML Pipelines</span>
+              <span class="tag">MCP</span>
+            </div>
           </div>
+
+          <p class="muted" style="margin:10px 0 0">
+            Built an end-to-end system that takes raw aviation + weather + turbulence data, converts it into ML-ready features,
+            trains predictive models, and exposes insights through an AI-queryable interface.
+          </p>
+
           <ul class="bullets">
-            <li>Built a distributed Spark pipeline integrating aviation + weather + turbulence datasets to engineer delay-risk features and perform end-to-end ETL + analysis.</li>
-            <li>Developed MLlib models (Logistic Regression, Random Forest, GBT) using pipelines, feature engineering, and cross-validation to predict delay probability.</li>
-            <li>Designed an AI-queryable analytics layer using an MCP server for natural-language access to insights.</li>
+            <li><b>Multi-source integration:</b> Joined aviation records with weather/turbulence/visibility signals and handled missing values, inconsistent timestamps, and schema differences using Spark transformations.</li>
+            <li><b>Feature engineering:</b> Created delay-risk indicators (temporal patterns, route context, severity signals, airport-level factors) to build clean training tables for modeling.</li>
+            <li><b>Model training + tuning:</b> Trained Spark MLlib models (Logistic Regression, Random Forest, Gradient-Boosted Trees) using pipeline workflows and cross-validation with consistent evaluation.</li>
+            <li><b>Usable outputs:</b> Produced structured prediction outputs and summary views so results can be reused in reporting, analysis, or a downstream application.</li>
+            <li><b>AI-queryable analytics:</b> Designed an MCP-based interface so a user can ask natural-language questions and get answers backed by your Spark outputs.</li>
           </ul>
+
+          <div class="tags">
+            <span class="tag"><i class="fa-solid fa-star"></i> Shows: scalable data processing + ML workflow thinking</span>
+            <span class="tag">End-to-end system design</span>
+            <span class="tag">Production-style structure</span>
+          </div>
         </div>
 
+        <!-- Project 2 -->
         <div class="tile col-6">
           <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap">
             <h3 style="margin:0;font-size:15.5px">Healthcare Admissions Database System</h3>
-            <span class="tag"><i class="fa-solid fa-hospital"></i> PostgreSQL • dbt • Streamlit</span>
+            <div class="tags" style="margin-top:0">
+              <span class="tag"><i class="fa-solid fa-hospital"></i> PostgreSQL</span>
+              <span class="tag">dbt</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Streamlit</span>
+            </div>
           </div>
+
+          <p class="muted" style="margin:10px 0 0">
+            Designed a full analytics-ready healthcare data platform — from raw CSV ingestion to validated OLAP models and an interactive dashboard.
+          </p>
+
           <ul class="bullets">
-            <li>Designed an end-to-end pipeline transforming raw admissions CSV into validated OLAP models using PostgreSQL + Python ETL + dbt.</li>
-            <li>Built 3NF OLTP schema and dbt star schema (fact & dimensions) for scalable analytics.</li>
-            <li>Delivered advanced SQL insights and a Streamlit dashboard inside a Docker environment.</li>
+            <li><b>Clean ingestion:</b> Built Python ETL validations (types, null checks, and consistency rules) before loading to PostgreSQL.</li>
+            <li><b>Strong data modeling:</b> Designed a normalized <b>3NF OLTP schema</b> for data integrity, then created an analytics-ready <b>star schema</b> with dbt (fact + dimensions).</li>
+            <li><b>Advanced SQL insights:</b> Used CTEs and window functions to build operational analytics (e.g., appointment patterns/no-show style analysis).</li>
+            <li><b>Delivery layer:</b> Built a Streamlit dashboard for non-technical users to explore KPIs without writing SQL.</li>
+            <li><b>Reproducible deployment:</b> Containerized the stack with Docker for consistent setup and execution.</li>
           </ul>
+
+          <div class="tags">
+            <span class="tag"><i class="fa-solid fa-star"></i> Shows: analytics engineering maturity</span>
+            <span class="tag">OLTP → OLAP thinking</span>
+          </div>
         </div>
 
+        <!-- Project 3 -->
         <div class="tile col-6">
           <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap">
-            <h3 style="margin:0;font-size:15.5px">Cybersecurity Data Lakehouse</h3>
-            <span class="tag"><i class="fa-solid fa-shield-halved"></i> Databricks • Delta Lake</span>
+            <h3 style="margin:0;font-size:15.5px">Cybersecurity Data Lakehouse (Medallion)</h3>
+            <div class="tags" style="margin-top:0">
+              <span class="tag"><i class="fa-solid fa-shield-halved"></i> Databricks</span>
+              <span class="tag">PySpark</span>
+              <span class="tag">Delta Lake</span>
+              <span class="tag">Medallion</span>
+            </div>
           </div>
+
+          <p class="muted" style="margin:10px 0 0">
+            Built a lakehouse pipeline for cybersecurity JSON data, focusing on scalable transformations and analytics-ready structure.
+          </p>
+
           <ul class="bullets">
-            <li>Built Bronze/Silver medallion layers on Databricks to process 40k+ cybersecurity JSON records.</li>
-            <li>Normalized nested arrays with Spark explode operations for granular vendor risk analysis.</li>
+            <li><b>Bronze/Silver pipeline:</b> Implemented medallion stages to move from raw JSON ingestion → cleaned and structured analytics tables.</li>
+            <li><b>Complex JSON normalization:</b> Flattened nested arrays/structures using Spark explode patterns to create granular vendor/product-level views.</li>
+            <li><b>Analytics foundation:</b> Produced curated tables enabling vendor risk analysis and downstream reporting.</li>
+            <li><b>Engineering focus:</b> Emphasized schema consistency, reliability, and reusability within Databricks + Delta Lake patterns.</li>
           </ul>
+
+          <div class="tags">
+            <span class="tag"><i class="fa-solid fa-star"></i> Shows: lakehouse + semi-structured data skill</span>
+            <span class="tag">Big data transformations</span>
+          </div>
         </div>
       </div>
     </section>
@@ -823,6 +798,9 @@
             </a>
             <a class="btn" href="resume.pdf" download><i class="fa-solid fa-download"></i> Resume</a>
           </div>
+          <p class="muted" style="margin:14px 0 0;font-size:13px">
+            Tip: put your PDF in this repo as <b>resume.pdf</b> (same folder as index.html) so the download button works.
+          </p>
         </div>
 
         <div class="tile col-4">
