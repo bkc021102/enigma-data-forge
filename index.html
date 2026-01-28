@@ -94,558 +94,259 @@
     }
 
     /* Hero */
-    .hero{
-      padding: 34px 0 8px;
-      display:grid;
-      grid-template-columns: 1.4fr .9fr;
-      gap: 18px;
-      align-items:stretch;
-    }
-    @media (max-width: 920px){
-      .hero{grid-template-columns: 1fr}
-    }
-    .card{
-      border:1px solid rgba(255,255,255,.10);
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
-      border-radius: var(--radius2);
-      box-shadow: var(--shadow);
-    }
-    .hero-left{
-      padding: 28px;
-      position:relative;
-      overflow:hidden;
-    }
-    .glow{
-      position:absolute; inset:-200px -150px auto auto;
-      width: 520px; height: 520px;
-      background: radial-gradient(circle at 30% 30%, rgba(124,58,237,.45), transparent 55%),
-                  radial-gradient(circle at 70% 70%, rgba(56,189,248,.35), transparent 55%);
-      filter: blur(22px);
-      opacity:.8;
-      pointer-events:none;
-    }
-    .kicker{
-      display:inline-flex; gap:10px; align-items:center;
-      padding: 10px 12px;
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-      border-radius: 999px;
-      color: var(--muted);
-      font-size: 13px;
-    }
-    .kicker i{color: rgba(56,189,248,.95)}
-    h1{
-      margin: 14px 0 10px;
-      font-size: clamp(30px, 4.2vw, 48px);
-      line-height:1.08;
-      letter-spacing:-.6px;
-    }
-    .sub{
-      margin: 0 0 18px;
-      font-size: 15.5px;
-      line-height:1.6;
-      color: var(--muted);
-      max-width: 60ch;
-    }
-    .cta-row{
-      display:flex; gap:12px; flex-wrap:wrap; margin-top:18px;
-    }
-    .btn{
-      display:inline-flex; align-items:center; gap:10px;
-      padding: 12px 14px;
-      border-radius: 14px;
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.05);
-      color: var(--text);
-      font-weight: 600;
-      transition: transform .15s ease, border-color .15s ease, background .15s ease;
-      user-select:none;
-    }
-    .btn:hover{transform: translateY(-1px); background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.18)}
-    .btn.primary{
-      border-color: rgba(124,58,237,.35);
-      background: linear-gradient(135deg, rgba(124,58,237,.36), rgba(56,189,248,.18));
-    }
-    .btn.primary:hover{border-color: rgba(124,58,237,.52)}
-    .hero-right{
-      padding: 18px;
-      display:grid;
-      gap: 12px;
-    }
-    .mini{
-      padding: 16px;
-      border-radius: var(--radius);
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-    }
-    .mini h3{margin:0 0 8px; font-size: 14px; color: rgba(255,255,255,.82)}
-    .mini p{margin:0; font-size: 13.5px; color: var(--muted); line-height:1.55}
-    .stats{
-      display:grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
-    }
-    @media (max-width: 520px){
-      .stats{grid-template-columns: 1fr}
-    }
-    .stat{
-      padding: 14px;
-      border-radius: var(--radius);
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-      text-align:left;
-    }
-    .stat .num{
-      font-weight:800; font-size: 18px; letter-spacing:-.3px;
-      background: linear-gradient(90deg, rgba(56,189,248,.95), rgba(124,58,237,.95));
-      -webkit-background-clip:text; background-clip:text; color: transparent;
-    }
-    .stat .lbl{font-size:12.5px; color: var(--muted); margin-top:3px}
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Krishna Chaitanya | Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    /* Sections */
-    section{margin-top: 26px}
-    .section-title{
-      display:flex; align-items:baseline; justify-content:space-between; gap:12px;
-      margin: 0 0 12px;
-    }
-    .section-title h2{
-      margin:0;
-      font-size: 18px;
-      letter-spacing:-.2px;
-    }
-    .section-title span{color: var(--muted2); font-size: 13px}
-    .grid{
-      display:grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap: 12px;
-    }
-    .col-6{grid-column: span 6}
-    .col-4{grid-column: span 4}
-    .col-8{grid-column: span 8}
-    .col-12{grid-column: span 12}
-    @media (max-width: 920px){
-      .col-6,.col-4,.col-8{grid-column: span 12}
-    }
+<style>
+body{
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at 20% 20%, #1e293b, #0b0f1a 60%);
+  color:white;
+  scroll-behavior:smooth;
+}
 
-    .tile{
-      padding: 18px;
-      border-radius: var(--radius2);
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-      position:relative;
-      overflow:hidden;
-    }
-    .tile:before{
-      content:"";
-      position:absolute; inset:-1px;
-      background: radial-gradient(600px 240px at 10% 0%, rgba(124,58,237,.20), transparent 55%),
-                  radial-gradient(520px 220px at 95% 20%, rgba(56,189,248,.16), transparent 55%);
-      opacity:.7;
-      pointer-events:none;
-    }
-    .tile > *{position:relative}
-    .muted{color: var(--muted)}
-    .tags{display:flex; flex-wrap:wrap; gap:8px; margin-top: 12px}
-    .tag{
-      font-size: 12.5px;
-      padding: 8px 10px;
-      border-radius: 999px;
-      border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
-      color: var(--muted);
-    }
-    .item-title{
-      display:flex; align-items:center; justify-content:space-between; gap:12px;
-      margin: 0 0 8px;
-    }
-    .item-title h3{margin:0; font-size: 15.5px; letter-spacing:-.15px}
-    .item-title a.smalllink{
-      font-size: 13px; color: rgba(56,189,248,.9);
-      border-bottom: 1px dashed rgba(56,189,248,.35);
-      padding-bottom:2px;
-    }
-    .bullets{margin: 10px 0 0; padding-left: 18px; color: var(--muted); line-height: 1.55; font-size: 13.5px}
-    .bullets li{margin: 6px 0}
+/* NAVBAR */
+nav{
+  position:fixed;
+  top:0; width:100%;
+  display:flex;
+  justify-content:space-between;
+  padding:18px 60px;
+  background:rgba(10,15,25,0.6);
+  backdrop-filter: blur(10px);
+  z-index:1000;
+}
+nav a{
+  color:#8be9fd;
+  text-decoration:none;
+  margin:0 15px;
+  font-weight:500;
+}
+.resume-btn{
+  border:1px solid #8be9fd;
+  padding:8px 16px;
+  border-radius:8px;
+}
 
-    /* Footer */
-    footer{
-      margin-top: 34px;
-      padding-top: 18px;
-      border-top: 1px solid rgba(255,255,255,.08);
-      color: var(--muted2);
-      font-size: 13px;
-      display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
-    }
-    .foot-links{display:flex; gap:12px; flex-wrap:wrap}
-    .foot-links a{color: var(--muted); border-bottom: 1px dashed rgba(255,255,255,.18)}
-    .foot-links a:hover{color: var(--text)}
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+.location{
+  border:1px solid #555;
+  padding:6px 14px;
+  border-radius:20px;
+  font-size:14px;
+  margin-bottom:10px;
+}
+.hero h1{
+  font-size:64px;
+  margin:10px 0;
+}
+.hero h1 span{
+  background:linear-gradient(90deg,#67e8f9,#c084fc);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+.subtitle{
+  font-size:20px;
+  color:#cbd5e1;
+}
+.desc{
+  width:60%;
+  margin-top:10px;
+  color:#94a3b8;
+}
+.hero-btns button{
+  margin:20px 10px;
+  padding:14px 24px;
+  border-radius:10px;
+  border:none;
+  font-weight:bold;
+}
+.primary{
+  background:#8be9fd;
+  color:#000;
+}
+.secondary{
+  background:#1e293b;
+  color:white;
+  border:1px solid #555;
+}
 
-    /* Toast */
-    .toast{
-      position: fixed;
-      left: 50%;
-      bottom: 18px;
-      transform: translateX(-50%);
-      background: rgba(10,14,24,.78);
-      border: 1px solid rgba(255,255,255,.12);
-      backdrop-filter: blur(14px);
-      padding: 10px 12px;
-      border-radius: 999px;
-      color: rgba(255,255,255,.86);
-      font-size: 13px;
-      display:none;
-      z-index: 60;
-      box-shadow: var(--shadow);
-    }
-  </style>
+/* SECTION */
+section{
+  padding:120px 80px;
+}
+.section-title{
+  font-size:28px;
+  margin-bottom:30px;
+}
+
+/* GLASS CARD */
+.card{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.1);
+  padding:25px;
+  border-radius:16px;
+  backdrop-filter:blur(8px);
+}
+
+/* ABOUT */
+.about-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:30px;
+}
+.side-card{
+  margin-bottom:20px;
+}
+
+/* SKILLS */
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+.skill-title{
+  font-weight:bold;
+  margin-bottom:10px;
+}
+.tags span{
+  background:#1e293b;
+  padding:6px 10px;
+  margin:5px;
+  display:inline-block;
+  border-radius:8px;
+  font-size:13px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .skills-grid,.about-grid{grid-template-columns:1fr;}
+  .hero h1{font-size:40px;}
+  .desc{width:90%;}
+}
+</style>
 </head>
 
 <body>
-  <div class="nav">
-    <div class="nav-inner">
-      <div class="brand">
-        <span class="dot" aria-hidden="true"></span>
-        <span>Krishna Chaitanya</span>
+
+<nav>
+  <div>
+    <a href="#about">01. About</a>
+    <a href="#skills">02. Skills</a>
+    <a href="#">03. Experience</a>
+    <a href="#">04. Projects</a>
+    <a href="#">05. Contact</a>
+  </div>
+  <a href="#" class="resume-btn">Resume</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="location"><i class="fa-solid fa-location-dot"></i> Buffalo, NY</div>
+  <h1>Krishna Chaitanya<br><span>Bhupathi Raju</span></h1>
+  <div class="subtitle">Building Intelligent Data & AI Systems at Scale</div>
+  <div class="desc">
+    Data Science graduate student specializing in end-to-end systems — from data ingestion
+    and feature engineering to ML modeling and AI-queryable interfaces.
+  </div>
+  <div class="hero-btns">
+    <button class="primary">Get in Touch</button>
+    <button class="secondary">View Projects</button>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-title">01. About Me</div>
+  <div class="about-grid">
+    <div class="card">
+      I come from a strong foundation in Computation and Mathematics, which naturally led me toward Data Science
+      and AI engineering. During my master's at the University at Buffalo, I developed a deep interest in large-scale
+      data systems, predictive analytics, and intelligent decision-support tools.
+
+      <br><br>
+      What excites me most is working at the intersection of big data engineering, machine learning,
+      and AI-driven analytics — building systems that enable real users to ask intelligent questions and get meaningful answers.
+    </div>
+    <div>
+      <div class="card side-card">
+        <b>Big Data Engineering</b><br>
+        Building scalable data pipelines with Spark and cloud-native architectures
       </div>
-      <div class="links">
-        <a class="pill" href="#about">About</a>
-        <a class="pill" href="#skills">Skills</a>
-        <a class="pill" href="#projects">Projects</a>
-        <a class="pill" href="#experience">Experience</a>
-        <a class="pill" href="#education">Education</a>
-        <a class="pill" href="#contact">Contact</a>
+      <div class="card side-card">
+        <b>Machine Learning</b><br>
+        Developing predictive models and intelligent decision-support systems
+      </div>
+      <div class="card side-card">
+        <b>AI-Driven Analytics</b><br>
+        Creating platforms that enable natural-language data exploration
       </div>
     </div>
   </div>
+</section>
 
-  <main class="container">
-    <!-- HERO -->
-    <div class="hero">
-      <div class="card hero-left">
-        <div class="glow" aria-hidden="true"></div>
-        <div class="kicker">
-          <i class="fa-solid fa-wand-magic-sparkles"></i>
-          <span>Data Scientist & AI Engineer • Spark • ML Pipelines • Analytics</span>
-        </div>
-
-        <h1>Krishna Chaitanya Bhupathi Raju</h1>
-        <p class="sub">
-          I build end-to-end data + ML systems — from large-scale ingestion and feature engineering
-          to model training, evaluation, and deployable analytics experiences.
-          I enjoy turning messy real-world data into clear, decision-ready insights.
-        </p>
-
-        <div class="cta-row">
-          <a class="btn primary" href="#projects">
-            <i class="fa-solid fa-rocket"></i> View Projects
-          </a>
-          <a class="btn" href="#contact">
-            <i class="fa-solid fa-paper-plane"></i> Contact Me
-          </a>
-          <a class="btn" href="mailto:bkchaitanya99@gmail.com">
-            <i class="fa-solid fa-envelope"></i> Email
-          </a>
-        </div>
-      </div>
-
-      <div class="hero-right">
-        <div class="mini">
-          <h3>Quick Links</h3>
-          <p class="muted">
-            <a class="pill" style="display:inline-flex;gap:8px;align-items:center;margin:6px 6px 0 0" href="mailto:bkchaitanya99@gmail.com">
-              <i class="fa-solid fa-envelope"></i> bkchaitanya99@gmail.com
-            </a>
-            <a class="pill" style="display:inline-flex;gap:8px;align-items:center;margin:6px 6px 0 0" href="https://www.linkedin.com/in/krishna-chaitanya-9b28aa238/" target="_blank" rel="noreferrer">
-              <i class="fa-brands fa-linkedin"></i> LinkedIn
-            </a>
-            <a class="pill" style="display:inline-flex;gap:8px;align-items:center;margin:6px 6px 0 0" href="https://github.com/" target="_blank" rel="noreferrer">
-              <i class="fa-brands fa-github"></i> GitHub
-            </a>
-          </p>
-        </div>
-
-        <div class="stats">
-          <div class="stat">
-            <div class="num">Spark</div>
-            <div class="lbl">Distributed data pipelines</div>
-          </div>
-          <div class="stat">
-            <div class="num">ML</div>
-            <div class="lbl">Feature → model → eval</div>
-          </div>
-          <div class="stat">
-            <div class="num">Deploy</div>
-            <div class="lbl">Tools, APIs, dashboards</div>
-          </div>
-        </div>
-
-        <div class="mini">
-          <h3>What I’m focused on</h3>
-          <p>
-            Building scalable ETL and ML workflows, improving model reliability, and creating clean analytics
-            that stakeholders can actually use.
-          </p>
-        </div>
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-title">02. Technical Skills</div>
+  <div class="skills-grid">
+    <div class="card">
+      <div class="skill-title">Programming & Analytics</div>
+      <div class="tags">
+        <span>Python</span><span>SQL</span><span>R</span><span>Pandas</span>
+        <span>NumPy</span><span>Matplotlib</span><span>Plotly</span>
       </div>
     </div>
 
-    <!-- ABOUT -->
-    <section id="about">
-      <div class="section-title">
-        <h2>About</h2>
-        <span>Who I am</span>
+    <div class="card">
+      <div class="skill-title">Data Engineering & Big Data</div>
+      <div class="tags">
+        <span>Apache Spark</span><span>PySpark</span><span>Databricks</span>
+        <span>Delta Lake</span><span>PostgreSQL</span><span>Snowflake</span>
+        <span>BigQuery</span><span>dbt</span><span>ETL Pipelines</span>
       </div>
-      <div class="grid">
-        <div class="tile col-8">
-          <p class="muted" style="margin:0; line-height:1.7">
-            I’m a master’s student in Data Science (ESDS at the University at Buffalo) and I enjoy building
-            production-like ML systems. I’m especially interested in scalable data engineering patterns,
-            practical ML modeling, and clean, explainable results.
-          </p>
+    </div>
 
-          <div class="tags">
-            <span class="tag"><i class="fa-solid fa-database"></i> Data Engineering</span>
-            <span class="tag"><i class="fa-solid fa-chart-line"></i> Analytics</span>
-            <span class="tag"><i class="fa-solid fa-brain"></i> Machine Learning</span>
-            <span class="tag"><i class="fa-solid fa-cloud"></i> Cloud-ready pipelines</span>
-          </div>
-        </div>
-
-        <div class="tile col-4">
-          <div class="item-title">
-            <h3>Highlights</h3>
-          </div>
-          <ul class="bullets">
-            <li>End-to-end Spark ETL with multi-source integration (aviation + weather + turbulence).</li>
-            <li>ML pipelines with tuning + evaluation (LR, RF, GBT).</li>
-            <li>Strong focus on clean outputs, reproducibility, and portfolio-ready documentation.</li>
-          </ul>
-        </div>
+    <div class="card">
+      <div class="skill-title">Machine Learning & AI</div>
+      <div class="tags">
+        <span>Scikit-learn</span><span>PyTorch</span>
+        <span>Logistic Regression</span><span>Random Forest</span>
+        <span>Gradient Boosted Trees</span><span>Feature Engineering</span>
+        <span>Cross Validation</span>
       </div>
-    </section>
+    </div>
 
-    <!-- SKILLS -->
-    <section id="skills">
-      <div class="section-title">
-        <h2>Skills</h2>
-        <span>Tools I use</span>
+    <div class="card">
+      <div class="skill-title">Cloud & DevOps</div>
+      <div class="tags">
+        <span>AWS</span><span>Azure</span><span>Docker</span>
+        <span>Git</span><span>GitHub</span><span>Streamlit</span>
       </div>
+    </div>
 
-      <div class="grid">
-        <div class="tile col-6">
-          <div class="item-title">
-            <h3>Data & Engineering</h3>
-          </div>
-          <div class="tags">
-            <span class="tag">PySpark</span>
-            <span class="tag">Spark SQL</span>
-            <span class="tag">Python</span>
-            <span class="tag">SQL</span>
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">dbt</span>
-            <span class="tag">Docker</span>
-          </div>
-        </div>
-
-        <div class="tile col-6">
-          <div class="item-title">
-            <h3>ML & Analytics</h3>
-          </div>
-          <div class="tags">
-            <span class="tag">ML Pipelines</span>
-            <span class="tag">Feature Engineering</span>
-            <span class="tag">Cross-Validation</span>
-            <span class="tag">Random Forest</span>
-            <span class="tag">Gradient-Boosted Trees</span>
-            <span class="tag">Logistic Regression</span>
-            <span class="tag">Model Evaluation</span>
-          </div>
-        </div>
+    <div class="card">
+      <div class="skill-title">Analytics & Experimentation</div>
+      <div class="tags">
+        <span>A/B Testing</span><span>Statistical Analysis</span>
+        <span>Data Visualization</span><span>Dashboards</span>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- PROJECTS -->
-    <section id="projects">
-      <div class="section-title">
-        <h2>Projects</h2>
-        <span>Selected work</span>
-      </div>
-
-      <div class="grid">
-        <div class="tile col-12">
-          <div class="item-title">
-            <h3>Flight Delay Risk Analytics (Spark + ML)</h3>
-            <a class="smalllink" href="#contact" title="Ask for repo link">Request repo link</a>
-          </div>
-          <p class="muted" style="margin:0; line-height:1.7">
-            Built a distributed Spark data pipeline integrating aviation + weather + turbulence datasets to engineer
-            large-scale delay-risk features and run end-to-end ML experiments.
-          </p>
-          <ul class="bullets">
-            <li>Implemented scalable cleaning, joins, and feature engineering with Spark DataFrames and Spark SQL.</li>
-            <li>Trained/tuned ML models (LR, RF, GBT) using pipeline-based workflows and cross-validation.</li>
-            <li>Produced reliable, structured outputs (metrics, predictions, summaries) designed for easy reporting.</li>
-          </ul>
-          <div class="tags">
-            <span class="tag">PySpark</span>
-            <span class="tag">ML Pipelines</span>
-            <span class="tag">ETL</span>
-            <span class="tag">Model Tuning</span>
-          </div>
-        </div>
-
-        <div class="tile col-6">
-          <div class="item-title">
-            <h3>Type 2 Diabetes Prediction</h3>
-          </div>
-          <p class="muted" style="margin:0; line-height:1.7">
-            Built classification models using BRFSS health indicators, focused on preprocessing, evaluation,
-            and clear interpretation for stakeholders.
-          </p>
-          <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">Classification</span>
-            <span class="tag">Feature Prep</span>
-            <span class="tag">Evaluation</span>
-          </div>
-        </div>
-
-        <div class="tile col-6">
-          <div class="item-title">
-            <h3>Hotel Booking OLTP → OLAP Pipeline</h3>
-          </div>
-          <p class="muted" style="margin:0; line-height:1.7">
-            Designed a database-driven analytics workflow with structured ingestion and reporting-friendly modeling.
-          </p>
-          <div class="tags">
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">SQL</span>
-            <span class="tag">dbt</span>
-            <span class="tag">Data Modeling</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section id="experience">
-      <div class="section-title">
-        <h2>Experience</h2>
-        <span>What I’ve done</span>
-      </div>
-
-      <div class="grid">
-        <div class="tile col-12">
-          <div class="item-title">
-            <h3>Machine Learning / Data Projects (Academic & Portfolio)</h3>
-          </div>
-          <ul class="bullets">
-            <li>Built reproducible notebooks and pipelines with strong focus on metrics, reporting, and clarity.</li>
-            <li>Worked with real-world datasets: missing values, skewed distributions, and practical evaluation needs.</li>
-            <li>Collaborated in teams with clear division of deliverables and presentation-ready outputs.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section id="education">
-      <div class="section-title">
-        <h2>Education</h2>
-        <span>Background</span>
-      </div>
-
-      <div class="grid">
-        <div class="tile col-12">
-          <div class="item-title">
-            <h3>University at Buffalo (SUNY) — Engineering Science (Data Science / ESDS)</h3>
-            <span class="muted" style="font-size:13px">Master’s</span>
-          </div>
-          <p class="muted" style="margin:0; line-height:1.7">
-            Coursework and projects in machine learning, scalable data systems, and applied analytics.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <div class="section-title">
-        <h2>Contact</h2>
-        <span>Let’s connect</span>
-      </div>
-
-      <div class="grid">
-        <div class="tile col-8">
-          <div class="item-title">
-            <h3>Reach out</h3>
-          </div>
-          <p class="muted" style="margin:0; line-height:1.7">
-            Best way: email me. I’m open to Data Scientist / Data Engineer / ML roles, research projects, and collaborations.
-          </p>
-
-          <div class="cta-row">
-            <a class="btn primary" href="mailto:bkchaitanya99@gmail.com">
-              <i class="fa-solid fa-envelope"></i> bkchaitanya99@gmail.com
-            </a>
-            <a class="btn" href="https://www.linkedin.com/in/krishna-chaitanya-9b28aa238/" target="_blank" rel="noreferrer">
-              <i class="fa-brands fa-linkedin"></i> LinkedIn
-            </a>
-            <a class="btn" href="https://github.com/" target="_blank" rel="noreferrer">
-              <i class="fa-brands fa-github"></i> GitHub
-            </a>
-            <button class="btn" type="button" onclick="copyEmail()">
-              <i class="fa-regular fa-copy"></i> Copy email
-            </button>
-          </div>
-        </div>
-
-        <div class="tile col-4">
-          <div class="item-title">
-            <h3>Extras</h3>
-          </div>
-          <ul class="bullets">
-            <li>Interests: cooking, sports, and building portfolio-grade projects.</li>
-            <li>Prefer roles that mix data engineering + applied ML.</li>
-            <li>Location: USA (open to relocation/remote).</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div>© <span id="year"></span> Krishna Chaitanya Bhupathi Raju</div>
-      <div class="foot-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </footer>
-  </main>
-
-  <div class="toast" id="toast">Copied!</div>
-
-  <script>
-    // year
-    document.getElementById("year").textContent = new Date().getFullYear();
-
-    // copy email
-    function copyEmail(){
-      const email = "bkchaitanya99@gmail.com";
-      navigator.clipboard.writeText(email).then(() => showToast("Email copied ✓"));
-    }
-
-    function showToast(msg){
-      const t = document.getElementById("toast");
-      t.textContent = msg;
-      t.style.display = "block";
-      t.style.opacity = "0";
-      t.style.transition = "opacity .2s ease";
-      requestAnimationFrame(() => t.style.opacity = "1");
-      clearTimeout(window.__toastTimer);
-      window.__toastTimer = setTimeout(() => {
-        t.style.opacity = "0";
-        setTimeout(() => t.style.display = "none", 200);
-      }, 1300);
-    }
-  </script>
 </body>
 </html>
