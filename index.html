@@ -448,6 +448,50 @@
       padding-bottom:2px;
     }
     .smalllink:hover{color: rgba(255,255,255,.92)}
+
+    /* ABOUT photo card */
+    .about-photo{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      align-items:center;
+      text-align:center;
+    }
+    .about-photo img{
+      width: 100%;
+      max-width: 320px;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: 0 18px 60px rgba(0,0,0,.55);
+      background: rgba(255,255,255,.04);
+    }
+    .about-photo .name{
+      font-weight: 850;
+      letter-spacing: -.2px;
+      font-size: 16px;
+      color: rgba(255,255,255,.92);
+    }
+    .about-photo .role{
+      font-size: 13px;
+      color: rgba(255,255,255,.65);
+      line-height: 1.45;
+    }
+    .about-photo .badges{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+    .about-photo .badge{
+      font-size: 12.5px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      color: rgba(255,255,255,.72);
+    }
   </style>
 </head>
 
@@ -561,8 +605,20 @@
           </div>
         </div>
 
+        <!-- UPDATED: About right column now includes photo -->
         <div class="tile col-4">
-          <div style="display:grid; gap:10px;">
+          <div class="about-photo">
+            <!-- Put your photo in repo as profile.jpg (same folder as index.html) -->
+            <img src="profile.jpg" alt="Krishna Chaitanya profile photo" />
+            <div class="name">Krishna Chaitanya Bhupathi Raju</div>
+            <div class="role">Data Science (University at Buffalo) • ML + Data Engineering • AI-driven Analytics</div>
+            <div class="badges">
+              <span class="badge"><i class="fa-solid fa-location-dot"></i> Buffalo, NY</span>
+              <span class="badge"><i class="fa-solid fa-briefcase"></i> Open to roles</span>
+            </div>
+          </div>
+
+          <div style="display:grid; gap:10px; margin-top:14px;">
             <div class="mini">
               <h3><i class="fa-solid fa-sitemap"></i> Big Data Engineering</h3>
               <p>Scalable pipelines with Spark and cloud-ready architecture.</p>
@@ -798,9 +854,7 @@
             </a>
             <a class="btn" href="Resume.pdf" download><i class="fa-solid fa-download"></i> Resume</a>
           </div>
-          <p class="muted" style="margin:14px 0 0;font-size:13px">
-            
-          </p>
+          <p class="muted" style="margin:14px 0 0;font-size:13px"></p>
         </div>
 
         <div class="tile col-4">
